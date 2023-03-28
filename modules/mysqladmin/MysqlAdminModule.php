@@ -11,8 +11,13 @@ class MysqlAdminModule
     public $db_username    = '';
     public $db_password    = '';
     public $db_name        = '';
+    public $settings       = [
+        'active'     => 1,
+        'admin_mode' => 1,
+    ];
 
-    public function connect(){
+    public function connect()
+    {
         return true;
     }
 }
