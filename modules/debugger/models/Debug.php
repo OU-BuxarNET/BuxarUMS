@@ -12,6 +12,11 @@ class Debug
         $this->data = debug_backtrace();
     }
 
+    public static function trace()
+    {
+        return true;
+    }
+
     /**
      * @return array
      */

@@ -22,6 +22,7 @@ class Router
     public static function start()
     {
         $url = $_SERVER['QUERY_STRING'];
+        $params = [];
 
         if (strpos($url, '&') !== false) {
             $url    = explode('&', $url);
