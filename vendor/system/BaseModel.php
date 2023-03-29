@@ -9,8 +9,4 @@ abstract class BaseModel
 {
     abstract protected function settings();
     abstract protected function status($status);
-
-    public function check() {
-        return true;
-    }
 }

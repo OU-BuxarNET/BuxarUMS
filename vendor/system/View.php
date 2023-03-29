@@ -17,6 +17,13 @@ class View
 
     public function render()
     {
+        if ($this->route['controller'] == ''){
+            $this->route['controller'] = 'main';
+        }
+        if ($this->route['method'] == ''){
+            $this->route['method'] = 'index';
+        }
+
         $file_view = "../views/{$this->route['controller']}/{$this->route['method']}.php";
 
         ob_start(); // буферизация
