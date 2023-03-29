@@ -3,18 +3,14 @@
 /**
  * Модель пользователя
  */
-class User
+class User extends UserModule
 {
-    public $id;
-    public $type;
-    public $status;
-    public $username;
-    public $family;
-    public $patronymic;
-    public $birthday;
-    public $data_arr = [];
+    public function login(): bool
+    {
+        return true;
+    }
 
-    public function getInfo()
+    public function getInfo(): array
     {
         return [];
     }
