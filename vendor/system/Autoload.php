@@ -58,7 +58,8 @@ class Autoload
             $classes = scandir($folder);
 
             foreach ($classes as $class) {
-                if ($class != '.' && $class != '..' && !is_dir("{$folder}/{$class}")) {
+                if ($class != '.' && $class != '..' &&
+                    !is_dir("{$folder}/{$class}")) {
                     require_once("{$folder}/{$class}");
                 }
             }

@@ -35,7 +35,7 @@ class Filem extends FilemModel
      *
      * @return bool
      */
-    protected function api($method, $params)
+    public function api($method, $params)
     {
         return true;
     }
